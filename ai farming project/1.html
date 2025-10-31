@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Farming Q&A Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Farming Q&A Assistant</h1>
+    <div id="chat" class="chat"></div>
+    <form id="askForm">
+      <textarea id="question" placeholder="Ask about planting, pests, soil, irrigation..." rows="3"></textarea>
+      <div class="actions">
+        <select id="context">
+          <option value="general">General</option>
+          <option value="organic">Organic</option>
+          <option value="horticulture">Horticulture</option>
+          <option value="livestock">Livestock</option>
+        </select>
+        <button type="submit">Ask</button>
+      </div>
+    </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
